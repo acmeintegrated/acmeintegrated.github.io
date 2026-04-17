@@ -36,7 +36,15 @@
 
     <main>
         <p>Soon online...</p>
-        
+        <script>
+  // Din email delt op: navn + @ + domæne
+  const user = "acmeintegrated";
+  const domain = "gmail.com";
+  const element = document.getElementById('email-link');
+  
+  // Skaber linket efter siden er indlæst
+  element.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+</script>
     </main>
 
     <footer>
